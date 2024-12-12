@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+/* Header */
+header{
+    display: flex;
+    background: #ededed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    align-items: center;
+}
+header .logo{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    list-style-type: none;
+}
+header .logo ul{
+    list-style-type: none;
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 1s ease-in-out;
+}
+header .logo img:hover{
+    transform: rotate(360deg);
+}
+header .menu ul{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+}
+header .menu ul li a{
+    text-transform: capitalize;
+    color: #000000;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+header .menu ul li a:hover{
+    color: #ededed;
+    background: red;
+}
+header .social ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+header .social ul li a{
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+header .social ul li a:hover{
+    color: red;
+}
+/* Footer */
+footer{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: #ededed;
+}
+footer .quick{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer .quick h3{
+    text-transform: capitalize;
+    font-size: large;
+}
+footer .quick .box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+footer .quick .box a{
+    color: #000000;
+    width: fit-content;
+    transition: 0.3s ease-in-out;
+    text-transform: capitalize;
+}
+footer .quick .box a:hover{
+    color: red;
+    letter-spacing: 2px;
+}
+footer .social{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer .social h3{
+    text-transform: capitalize;
+    font-size: large;
+}
+footer .social .box{
+    display: flex;
+    gap: 1.3em;
+}
+footer .social .box a{
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+footer .social .box a:hover{
+    color: red;
+}
+.copy{
+    text-align: center;
+    background: #ededed;
+}
+/* Home Page */
+.home {
+    margin: 8rem 3%;
+}
+.home form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0,0.2);
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.home form .box{
+    display: flex;
+    margin: 0% auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+.home form:hover .box{
+    border: 1px dashed red;
+}
+.home form .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+.home form:hover .box img{
+    transform: scale(1.2);
+}
+.home form .text{
+    text-align: center;
+    margin-top: 3rem;
+    text-transform: capitalize;
+}
+.home form .button{
+    text-align: center;
+    margin-top: 3rem;
+}
+.home form .button input{
+    width: 50%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+.home form .button input:hover{
+    background: red;
+    color: #ededed;
+    letter-spacing: 2px;
+}
+/* About Page */
+.about{
+    padding: 2rem 3%;
+}
+.about .first-container{
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 1rem;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 700px;
+    gap: 3rem;
+}
+.about .first-container .image{
+    width: 50%;
+}
+.about .first-container .image img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.about .first-container .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+.about .first-container .text h3{
+    font-weight: 700;
+    font-size: x-large;
+    text-align: center;
+}
+.about .first-container .text p{
+    text-align: center;
+}
