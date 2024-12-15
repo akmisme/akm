@@ -214,3 +214,55 @@ footer .social .box a:hover{
 .about .first-container .text p{
     text-align: center;
 }
+@media screen and (max-width:1024px) {
+    
+}
+@media screen and (max-width:991px) {
+    
+}
+@media screen and (max-width:768px) {
+    
+}
+@media screen and (max-width:600px) {
+    header .logo ul li img{
+        width: 50px;
+    }
+    header .menu ul li a{
+        font-size: small;
+    }
+    header .social ul li a{
+        font-size: small;
+    }
+    footer{
+        grid-template-columns: repeat(1,1fr);
+        gap: 0.5rem;
+    }
+    footer .quick h3{
+        font-size: medium;
+    }
+    footer .quick a{
+        font-size: small;
+    }
+    footer .social h3{
+        font-size: medium;
+    }
+    footer .social a{
+        font-size: small;
+    }
+    .about .first-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about .first-container .image img{
+       border-radius: 50%;
+        width: 100%;
+    }
+    .about .first-container .text{
+        width: 100%;
+    }
+    .about .first-container .text P{
+        font-size: medium;
+    }
+}
