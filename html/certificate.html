@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="icon" type="image/png" href="../img/singanature.png" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="logo heartbeat">
+        <a href="about.html"><img src="../img/singanature.png" /></a>
+      </section>
+      <section class="menu">
+        <a href="about.html">about me</a>
+        <a href="edu.html">education</a>
+        <a href="project.html">project</a>
+      </section>
+      <section class="social">
+        <section class="link">
+          <a href="tel:09776209978"><i class="fa fa-mobile"></i></a>
+          <a href="https://www.facebook.com/y.yell.3" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/aung-kaung-myat-19349a226/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </section>
+        <section class="bar" id="bar">
+          <i class="fa fa-bars"></i>
+        </section>
+        <nav class="nav" id="nav">
+          <section class="menu">
+            <a href="about.html">about me</a>
+            <a href="edu.html">education</a>
+            <a href="certificate.html">certificate</a>
+          </section>
+          <section class="social">
+            <a href="tel:09776209978"><i class="fa fa-mobile"></i></a>
+            <a href="https://www.facebook.com/y.yell.3" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/aung-kaung-myat-19349a226/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="javascript:void(0)" class="close-btn" id="close-btn"
+              >&times;</a
+            >
+          </section>
+        </nav>
+      </section>
+    </header>
+    <main></main>
+    <footer>
+      <section class="quick">
+        <h3>quick link</h3>
+        <section class="link"> 
+          <a href="about.html">about me</a>
+          <a href="edu.html">education</a>
+          <a href="project.html">project</a>
+        </section>
+      </section>
+      <section class="follow">
+        <h3>follow me</h3>
+        <section class="us">
+          <a href="tel:09776209978"><i class="fa fa-mobile"></i></a>
+        <a href="https://www.facebook.com/y.yell.3" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/aung-kaung-myat-19349a226/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        </section>
+      </section>
+      <section class="social"></section>
+    </footer>
+    <div class="copy">
+      <p>&copy; copyright. all right reserved.</p>
+      <p>developed by akm.</p>
+    </div>
+    <script>
+      document.getElementById("bar").addEventListener("click", function () {
+        document.getElementById("nav").style.width = "200px";
+      });
+
+      document
+        .getElementById("close-btn")
+        .addEventListener("click", function () {
+          document.getElementById("nav").style.width = "0";
+        });
+    </script>
+  </body>
+</html>
